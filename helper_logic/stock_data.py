@@ -3,8 +3,12 @@
 import FinanceDataReader as fdr
 
 
-def volatility_calc(stock_code, start_date):
-    df = fdr.DataReader(stock_code, start_date)
-    print(df)
+class VolatilityCalc:
+    def __init__(self):
+        pass
 
-volatility_calc('005930', '2019-12-30')
+
+    def volatility_calc(stock_code, start_date):
+        df = fdr.DataReader(stock_code, start_date)
+        print(df)
+
